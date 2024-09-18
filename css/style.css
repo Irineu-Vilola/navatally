@@ -1,4 +1,13 @@
+/*** Cores do site ***/
 
+:root{
+    --cor1:#F8BE4F;
+    --cor2:#2D1E19;
+    --white:#E3EBED;
+   
+
+    
+}
 /*** Spinner Start ***/
 /*** Spinner ***/
 #spinner {
