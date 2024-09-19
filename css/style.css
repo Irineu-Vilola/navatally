@@ -8,8 +8,38 @@
 
     
 }
+*{
+    
+}
+
+/*** Configurações gerais ***/
 p{
     text-align: justify;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+    transition: 0.2s;
+}
+
+a:hover{
+    color: #F8BE4F;
+}
+
+.cor-fundo{
+    background-color:var(--cor2);
+
+}
+.btn-primary{
+    background-color: var(--cor1) !important;
+    border: none !important;
+
+}
+.btn-dark{
+    background-color: var(--cor2) !important;
+}
+.text-primary{
+    color: var(--cor1) !important;
 }
 /*** Spinner Start ***/
 /*** Spinner ***/
@@ -78,30 +108,27 @@ p{
     border-radius: 50%;
 }
 
-.btn.btn-primary {
+.btn{
     box-shadow: inset 0 0 0 0 var(--bs-primary);
 }
 
-.btn.btn-primary:hover {
-    box-shadow: inset 300px 0 0 0 var(--bs-light) !important;
-    color: var(--bs-primary) !important;
+.btn:hover {
+    box-shadow: inset 300px 0 0 0 var(--cor2) !important;
+    color: var(--cor1) !important;
 }
 
-.btn.btn-light {
-    box-shadow: inset 0 0 0 0 var(--bs-primary);
+.btn {
+    box-shadow: inset 0 0 0 0 var(--cor1);
 }
 
-.btn.btn-light:hover {
-    box-shadow: inset 300px 0 0 0 var(--bs-primary);
-    color: var(--bs-light) !important;
-}
+
 
 .btn-hover {
     transition: 0.5s;
 }
 
 .btn-hover:hover {
-    color: var(--bs-secondary) !important;
+    color: var(--cor2) !important;
 }
 
 /*** Section Title Start ***/
@@ -123,7 +150,7 @@ p{
 
 .topbar {
     padding: 2px 10px 2px 20px;
-    background: var(--bs-primary) !important;
+    
 }
 
 .topbar a,
@@ -131,10 +158,7 @@ p{
     transition: 0.5s;
 }
 
-.topbar a:hover,
-.topbar a i:hover {
-    color: var(--bs-secondary) !important;
-}
+
 
 
 @media (max-width: 576px) {
@@ -151,7 +175,7 @@ p{
     position: relative;
     margin-right: 25px;
     padding: 35px 0;
-    color: var(--bs-dark) !important;
+    color: var(--cor2) !important;
     font-size: 16px;
     font-weight: 400;
     outline: none;
@@ -160,12 +184,12 @@ p{
 
 .sticky-top.navbar-light .navbar-nav .nav-link {
     padding: 20px 0;
-    color: var(--dark) !important;
+    color: var(--cor2) !important;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: var(--bs-primary) !important;
+    color: var(--cor1) !important;
 }
 
 .navbar-light .navbar-brand img {
@@ -180,7 +204,6 @@ p{
 .navbar .dropdown-toggle::after {
     border: none;
     content: "\f107";
-    font-family: "Font Awesome 5 Free";
     font-weight: 600;
     vertical-align: middle;
     margin-left: 8px;
@@ -201,14 +224,14 @@ p{
 }
 
 .dropdown .dropdown-menu a:hover {
-    background: var(--bs-primary);
-    color: var(--bs-white);
+    background: var(--cor1);
+    color: var(--cor2);
 }
 
 .navbar .nav-item:hover .dropdown-menu {
     transform: rotateX(0deg);
     visibility: visible;
-    background: var(--bs-light) !important;
+    background: var(--white) !important;
     transition: .5s;
     opacity: 1;
 }
@@ -216,13 +239,13 @@ p{
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: var(--bs-white);
+        background: var(--white);
     }
 
     .navbar.navbar-expand-lg .navbar-toggler {
         padding: 10px 20px;
-        border: 1px solid var(--bs-primary);
-        color: var(--bs-primary);
+        border: 1px solid var(--cor1);
+        color: var(--cor1);
     }
 
     .navbar-light .navbar-collapse {
@@ -234,7 +257,7 @@ p{
     .sticky-top.navbar-light .navbar-nav .nav-link {
         padding: 10px 0;
         margin-left: 0;
-        color: var(--bs-dark) !important;
+        color: var(--cor2) !important;
     }
 
     .navbar-light .navbar-brand img {
@@ -254,7 +277,7 @@ p{
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light) !important;
+        background: var(--white) !important;
     }
 
     .navbar-light .navbar-nav .nav-link::before {
@@ -264,7 +287,7 @@ p{
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--bs-primary);
+        background: var(--cor1);
         transition: .5s;
     }
 
@@ -291,8 +314,8 @@ p{
     left: 20px;
     transform: translateY(-50%);
     border-radius: 50%;
-    background: var(--bs-primary);
-    color: var(--bs-white);
+    background:var(--cor1);
+    color: var(--white);
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -308,8 +331,8 @@ p{
     right: 20px;
     transform: translateY(-50%);
     border-radius: 50%;
-    background: var(--bs-primary);
-    color: var(--bs-white);
+    background: var(--cor1);
+    color: var(--white);
     font-size: 30px;
     display: flex;
     align-items: center;
@@ -324,8 +347,8 @@ p{
 
 .header-carousel .owl-nav .owl-prev:hover,
 .header-carousel .owl-nav .owl-next:hover {
-    box-shadow: inset 150px 0 0 0 var(--bs-light) !important;
-    color: var(--bs-primary) !important;
+    box-shadow: inset 150px 0 0 0 var(--white) !important;
+    color: var(--cor1) !important;
 }
 
 @media (max-width: 576px) {
@@ -400,7 +423,7 @@ p{
 }
 
 .bg-breadcrumb .breadcrumb-item a {
-    color: var(--bs-white) !important;
+    color: var(--white) !important;
 }
 /*** Single Page Hero Header End ***/
 
@@ -436,7 +459,7 @@ p{
 
 .service .service-item:hover .service-img::before {
     height: 100%;
-    background: rgba(21, 185, 217, .3);
+    background: #f8bd4f55;
 }
 
 .service .service-item .service-img:hover img {
@@ -458,13 +481,13 @@ p{
     left: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background: rgba(21, 185, 217, .5);
+    background:#f8bd4f55;
     transition: 0.5s;
     z-index: 3;
 }
 
 .service .service-item:hover .service-content::before {
-    background: rgba(21, 185, 217, .5);
+    background:#f8bd4f55;
     height: 100%;
 }
 
@@ -475,11 +498,11 @@ p{
 
 .service .service-item:hover .service-content .service-content-inner {
     position: relative;
-    color: var(--bs-white) !important;
+    color: var(--cor2) !important;
     z-index: 9;
 }
 .service .service-item:hover .service-content .service-content-inner h5 {
-    color: var(--bs-secondary);
+    color: var(--cor2);
 }
 
 /*** Service End ***/
@@ -497,7 +520,7 @@ p{
     left: 0; 
     bottom: 0; 
     border: 10px solid; 
-    border-color: var(--bs-white) var(--bs-white) var(--bs-white) var(--bs-white);
+    border-color: var(--white) var(--white) var(--white) var(--white);
     border-radius: 50%;
 
 }
@@ -508,7 +531,7 @@ p{
     left: -125px; 
     transform: rotate(-90deg);
     background: transparent;
-    color: var(--bs-primary);
+    color: var(--cor1);
     font-size: 20px;
     font-weight: 600;
     letter-spacing: 4px;
@@ -520,9 +543,9 @@ p{
 .feature .feature-item {
     position: relative;
     display: flex;
-    border: 1px solid var(--bs-primary);
+    border: 1px solid var(--cor1);
     border-radius: 10px;
-    background: var(--bs-light);
+    background:#2d1e19e4;
     transition: 0.5s;
 
 }
@@ -540,7 +563,7 @@ p{
 
 .feature .feature-item:hover::before {
     width: 100%;
-    background: var(--bs-primary);
+    background: var(--cor1);
 }
 
 .feature .feature-item .feature-icon {
@@ -556,7 +579,7 @@ p{
 
 .feature .feature-item:hover .feature-content {
     position: relative;
-    color: var(--bs-white);
+    color: var(--white);
     z-index: 2;
 }
 
@@ -568,24 +591,27 @@ p{
 
 /*** Appointment Start ***/
 .appointment {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/cidade-bg.jpg);
+    background: linear-gradient(#2d1e195b, #2d1e19c7), url(../img/cidade-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: var(--white);
 }
 
+
+
 .appointment .appointment-form {
-    background: rgba(239, 162, 134, 0.3);
+    background: rgba(0, 0, 0, 0.356);
 }
 
 .appointment .appointment-form .btn.btn-primary {
-    box-shadow: inset 0 0 0 0 var(--bs-primary);
+    box-shadow: inset 0 0 0 0 #2d1e196f;
 }
 
 .appointment .appointment-form .btn.btn-primary:hover {
     box-shadow: inset 600px 0 0 0 var(--bs-light) !important;
-    color: var(--bs-primary) !important;
+    color: var(--cor1) !important;
 }
 /*** Youtube Video start ***/
 .video {
@@ -618,7 +644,7 @@ p{
     display: block;
     width: 115px;
     height: 115px;
-    background: var(--bs-primary);
+    background: #2D1E19;
     border-radius: 50%;
     animation: pulse-border 1500ms ease-out infinite;
     transition: 0.5s;
@@ -726,11 +752,11 @@ p{
 }
 
 .team .team-item:hover .team-img::before {
-    background: rgba(21, 185, 217, .3);
+    background: #2d1e193e;
 }
 
 .team .team-item .team-content {
-    color: var(--bs-primary);
+    color: var(--cor1);
     transition: 0.5s;
 }
 
@@ -752,11 +778,12 @@ p{
 
 /*** testimonial Start ***/
 .testimonial {
-    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/cidade-bg.jpg);
+    background: linear-gradient(#2d1e195b, #2d1e19c7), url(../img/cidade-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    color: var(--white);
 }
 
 .testimonial .testimonial-item .testimonial-inner {
@@ -772,7 +799,7 @@ p{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 5px solid var(--bs-white);
+    border: 5px solid var(--white);
 }
 
 .testimonial .testimonial-carousel.owl-carousel {
@@ -791,8 +818,8 @@ p{
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    background: var(--bs-light);
-    color: var(--bs-primary);
+    background:var(--cor1);
+    color: var(--cor2);
     transition: 0.5s;
 }
 
@@ -808,16 +835,16 @@ p{
     align-items: center;
     justify-content: center;
     font-size: 20px;
-    background: var(--bs-light);
-    color: var(--bs-primary);
+    background: var(--cor1);
+    color: var(--cor2);
     transition: 0.5s;
 }
 
 
 .testimonial .testimonial-carousel .owl-nav .owl-prev:hover,
 .testimonial .testimonial-carousel .owl-nav .owl-next:hover {
-    box-shadow: inset 100px 0 0 0 var(--bs-primary) !important;
-    color: var(--bs-white) !important;
+    box-shadow: inset 100px 0 0 0 var(--cor1) !important;
+    color: var(--white) !important;
 }
 
 
@@ -845,7 +872,7 @@ p{
     height: 20px;
     border-radius: 50%;
     margin-right: 15px;
-    border: 1px solid var(--bs-white);
+    border: 1px solid var(--white);
     background: transparent;
     transition: 0.5s;
 }
@@ -853,7 +880,7 @@ p{
 .testimonial-carousel .owl-dots .owl-dot.active {
     width: 20px;
     height: 20px;
-    background: var(--bs-secondary) !important;
+    background: var(--cor2) !important;
 }
 
 .testimonial-carousel .owl-dots .owl-dot span {
@@ -879,7 +906,7 @@ p{
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: var(--bs-white);
+    background: var(--white);
 }
 
 .testimonial .testimonial-carousel .testimonial-item .testimonial-inner p.fs-7 {
@@ -904,7 +931,7 @@ p{
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    color: var(--bs-primary);
+    color: var(--cor1);
 }
 
 .testimonial .section-title .sub-style::before {
@@ -916,7 +943,7 @@ p{
     transform: translateY(-50%);
     margin-top: 8px;
     margin-left: -100px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 
 .testimonial .section-title .sub-style::after {
@@ -928,14 +955,14 @@ p{
     transform: translateY(-50%);
     margin-bottom: 5px;
     margin-left: -50px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 
 .testimonial .section-title .sub-title {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    color: var(--bs-primary);
+    color: var(--cor1);
 }
 
 .testimonial .section-title .sub-title::before {
@@ -947,7 +974,7 @@ p{
     transform: translateY(-50%);
     margin-top: 8px;
     margin-right: -100px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 
 .testimonial .section-title .sub-title::after {
@@ -959,7 +986,7 @@ p{
     transform: translateY(-50%);
     margin-bottom: 8px;
     margin-right: -50px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 /*** Testimonial End ***/
 
@@ -993,12 +1020,12 @@ p{
 }
 
 .blog .blog-item:hover .blog-img::after {
-    background: rgba(21, 185, 217, .5);
+    background: #f8bd4fa0;
 }
 
 .blog .blog-item .blog-centent {
-    background: var(--bs-light);
-    border: 1px solid var(--bs-primary);
+    background: var(--white);
+    border: 1px solid var(--cor1);
     border-top: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -1008,7 +1035,7 @@ p{
 
 /*** Contact Start ***/
 .contact {
-    background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-1.jpg);
+    background: linear-gradient(#2d1e193e, #2d1e19aa), url(../img/cidade-bg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1017,18 +1044,18 @@ p{
 
 
 .contact .contact-form .btn.btn-light {
-    box-shadow: inset 0 0 0 0 var(--bs-primary);
+    box-shadow: inset 0 0 0 0 var(--cor1);
 }
 
 .contact .contact-form .btn.btn-light:hover {
-    box-shadow: inset 600px 0 0 0 var(--bs-primary) !important;
-    color: var(--bs-white) !important;
+    box-shadow: inset 600px 0 0 0 var(--white) !important;
+    color: var(--white) !important;
 }
 
 .contact .contact-form .form-floating input,
 .contact .contact-form .form-floating textarea,
 .contact .contact-form .form-floating label {
-    color: var(--bs-light);
+    color: var(--white);
 }
 
 
@@ -1044,7 +1071,7 @@ p{
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    color: var(--bs-primary);
+    color: var(--cor1);
 }
 
 .contact .section-title .sub-style::before {
@@ -1056,7 +1083,7 @@ p{
     transform: translateY(-50%);
     margin-top: 8px;
     margin-left: -100px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 
 .contact .section-title .sub-style::after {
@@ -1068,14 +1095,14 @@ p{
     transform: translateY(-50%);
     margin-bottom: 5px;
     margin-left: -50px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 
 .contact .section-title .sub-title {
     position: relative;
     display: inline-block;
     text-transform: uppercase;
-    color: var(--bs-primary);
+    color: var(--cor1);
 }
 
 .contact .section-title .sub-title::before {
@@ -1087,7 +1114,7 @@ p{
     transform: translateY(-50%);
     margin-top: 8px;
     margin-right: -100px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 
 .contact .section-title .sub-title::after {
@@ -1099,7 +1126,7 @@ p{
     transform: translateY(-50%);
     margin-bottom: 8px;
     margin-right: -50px;
-    border: 1px solid var(--bs-white) !important;
+    border: 1px solid var(--white) !important;
 }
 /*** Contact End ***/
 
@@ -1109,7 +1136,7 @@ p{
     justify-content: center;
     text-align: center;
     border: 2px solid ;
-    background-color:var(--bs-primary);
+    background-color:var(--cor1);
     padding: 20px;
     border-radius: 10px;
     width: 60%;
@@ -1123,10 +1150,11 @@ p{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    color: var(--white);
 }
 .footer .footer-item a {
     line-height: 35px;
-    color: var(--bs-body);
+    color: var(--white);
     transition: 0.5s;
 }
 
@@ -1136,13 +1164,13 @@ p{
 
 .footer .footer-item a:hover {
     letter-spacing: 2px;
-    color: var(--bs-primary);
+    color: var(--cor1);
 }
 
 /*** Footer End ***/
 
 /*** copyright Start ***/
 .copyright {
-    background: var(--bs-dark) !important;
+    background: var(--cor2) !important;
 }
 /*** copyright end ***/
