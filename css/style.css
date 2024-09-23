@@ -69,6 +69,19 @@ a:hover{
     transition: 0.5s;
     z-index: 99;
 }
+.butao-whatsapp{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    display: flex;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 99;
+    
+}
 
 /*** Button Start ***/
 .btn {
@@ -132,10 +145,23 @@ a:hover{
 }
 
 /*** Section Title Start ***/
-.section-title {
+.section-title h4{
     max-width: 900px;
     text-align: center;
+    font-weight: 500;
+    padding: 30px 0px;
+    
     margin: 0 auto;
+    background-color:#2d1e19c7;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px #2d1e1947;
+    
+}
+.section-title h4{
+   
+    font-weight: 500;
+    
+
     
 }
 
@@ -691,17 +717,21 @@ a:hover{
 
 #videoModal {
     z-index: 99999;
+    backdrop-filter: blur(1px);
 }
 
 #videoModal .modal-dialog {
     position: relative;
     max-width: 800px;
     margin: 60px auto 0 auto;
+    
 }
 
 #videoModal .modal-body {
     position: relative;
     padding: 0px;
+   
+
 }
 
 #videoModal .close {
@@ -770,7 +800,7 @@ a:hover{
 }
 
 .team .team-item:hover .team-content {
-    background: var(--bs-primary);
+    background: var(--cor1);
     color: var(--bs-white);
 }
 /*** Team End ***/
