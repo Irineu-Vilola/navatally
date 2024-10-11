@@ -101,45 +101,55 @@
                         <h5 class="modal-title" id="exampleModalLabel">Login</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="modal-body d-flex align-items-center justify-content-center bg-light">
                         <div class="col-lg-6 fadeInRight" >
                             <div class="appointment-form rounded p-5">
-                                
-                               
-                                <form class="p-3 border-primary">
+
+
+
+                                <form>
                                     <h1 class="display-4 mb-4 text-center"><i class="fs-1 bi bi-person-circle"></i></h1>
-                                    <div class="row gy-4 gx-4">
-                                        
-                                            <div class="col-xl-12">
-                                               
-                                                <input type="email" class="form-control py-2 border-primary bg-transparent text-white" placeholder="Email">
+                                    <div class="row g-3">
+                                        <div class="col-xl-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="email" class="form-control bg-transparent border border-primary text-dark" id="name" placeholder="Your Name">
+                                                <label for="name">Email</label>
                                             </div>
-                                            <div class="col-xl-12">
-                                               
-                                                <input type="password" class="form-control py-2 border-primary bg-transparent text-white" placeholder="Senha">
-                                            </div>   
-                                            <div class="col-xl-12 d-flex justify-content-between align-items-center">
-                                                <div><input type="checkbox"> <span>Termos </span></div>
-
-                                                <a href="#">Esqueceu-se da Senha?</a>
-                                               
-                                            
-                                            </div>                                                                      
-                                                      
-                                    
-                                        <div class="col-12">
-                                            <button type="button" class="btn btn-primary text-white w-100 py-2 px-5">Login</button>
                                         </div>
+                                        <div class="col-xl-12 col-xl-6">
+                                            <div class="form-floating">
+                                                <input type="password" class="form-control bg-transparent border border-primary text-dark" id="email" placeholder="Your Email">
+                                                <label for="email">Senha</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-xl-12 d-flex justify-content-between align-items-center">
+                                            <div><input type="checkbox"> <span>Termos </span></div>
 
+                                            <a class="text-dark" href="#">Esqueceu-se da Senha?</a>
+                                           
+                                        
+                                        </div>   
+                                        
+                                                                   
+                                        
+                                        
+                                        <div class="col-12 d-flex justify-content-center">
+                                            <button class="btn btn-primary text-white w-100 py-3">Login</button>
+                                        </div>
                                         <div class="col-xl-12 d-flex justify-content-between align-items-center">
                                            
 
-                                            <a href="criar_conta.html">Registrar-se</a>
+                                            <a class="text-dark" href="criar_conta.html">Registrar-se</a>
                                            
                                         
                                         </div> 
                                     </div>
                                 </form>
+                                
+                               
+                                
+
+                                   
                             </div>
                         </div>
                     </div>
@@ -504,7 +514,7 @@
                     <div class="col-md-6 col-lg-6 col-xl-3">
                         <div class="footer-item d-flex flex-column">
                             <h4 class="text-white mb-4">Tally-travel</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus dolorem impedit eos autem dolores laudantium quia, qui similique
+                            <p>
                             </p>
                             <div class="d-flex align-items-center">
                                 <i class="fas fa-share fa-2x text-white me-2"></i>
