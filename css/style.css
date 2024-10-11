@@ -11,7 +11,9 @@
 *{
     
 }
-
+.about-titulo{
+    font-weight:900;
+}
 /*** Configurações gerais ***/
 p{
     text-align: justify;
